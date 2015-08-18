@@ -4,10 +4,9 @@
   apt: update_cache=yes
 
 - name: Installs essential packages
-  apt: pkg={{item}} states=present
+  apt: pkg={{item}} state=present
   with_items:
     - git
-    - zsh
     - tree
     - tmux
     - wget
