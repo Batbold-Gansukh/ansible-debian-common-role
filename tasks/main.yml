@@ -1,0 +1,14 @@
+# vim:ft=ansible:
+
+- name: Update apt-get cache
+  apt: update_cache=yes
+
+- name: Installs essential packages
+  apt: pkg={{item}} states=present
+  with_items:
+    - git
+    - zsh
+    - tree
+    - tmux
+    - wget
+    - curl
