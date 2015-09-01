@@ -11,3 +11,4 @@
     - tmux
     - wget
     - curl
+    - htop
